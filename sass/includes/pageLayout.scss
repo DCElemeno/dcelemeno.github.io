@@ -1,0 +1,34 @@
+.page-container {}
+.nav-container {
+	width:100%;
+	height:100%;
+	display:flex;
+}
+.main-header {
+	z-index:999;
+	width:100%;
+	height:50px;
+	margin:0;
+	padding:16px;
+	font-weight:bold;
+}
+.nav-menu {
+	flex:left;
+    height: 100vh;
+    width: 200px;
+    margin: 0 auto 0 0;
+    md-menu-content {
+    	padding:0;
+    	md-menu-item:hover {
+        	background: #aaa;
+    	}
+    }
+    
+}
+.page-content {
+	background:#ddd;
+	flex:right;
+	width:calc(100% - 200px);
+	height:100vh;
+	z-index:-999;
+}
